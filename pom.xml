@@ -15,6 +15,7 @@
 	<modules>
 		<module>blogserver</module>
 		<module>common</module>
+		<module>oa</module>
 	</modules>
 
 	<parent>
