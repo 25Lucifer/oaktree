@@ -1,4 +1,4 @@
-package com.jameson.oaktree.common.entity;
+package com.jameson.oaktree.common.base;
 
 import java.util.Date;
 
