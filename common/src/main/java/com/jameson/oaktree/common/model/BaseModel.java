@@ -6,12 +6,13 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
+import java.io.Serializable;
 
 /**
  * @author zhangshu
  * @date 2022-01-17 10:29
  */
-public class BaseModel {
+public class BaseModel implements Serializable {
 
     protected static Logger logger = LoggerFactory.getLogger(BaseModel.class);
 

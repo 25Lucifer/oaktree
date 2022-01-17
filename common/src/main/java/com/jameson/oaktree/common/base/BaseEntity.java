@@ -1,12 +1,14 @@
 package com.jameson.oaktree.common.base;
 
+import com.jameson.oaktree.common.model.BaseModel;
+
 import java.util.Date;
 
 /**
  * @author zhangshu
  * @date 2022-01-17 16:09
  */
-public class BaseEntity {
+public class BaseEntity extends BaseModel {
 
     private Long id;
 

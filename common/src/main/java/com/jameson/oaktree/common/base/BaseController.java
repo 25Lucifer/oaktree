@@ -2,6 +2,11 @@ package com.jameson.oaktree.common.base;
 
 import com.sun.org.slf4j.internal.Logger;
 import com.sun.org.slf4j.internal.LoggerFactory;
+import org.springframework.web.context.request.RequestContextHolder;
+import org.springframework.web.context.request.ServletRequestAttributes;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 /**
  * @author tree
@@ -12,13 +17,11 @@ public class BaseController {
 
     protected HttpServletRequest getRequest(){
         ServletRequestAttributes requestAttributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
-        HttpServletRequest request = requestAttributes.getRequest();
-        return request;
+        return requestAttributes.getRequest();
     }
 
     protected HttpServletResponse getResponse(){
         ServletRequestAttributes requestAttributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
-        HttpServletResponse response = requestAttributes.getResponse();
-        return response;
+        return requestAttributes.getResponse();
     }
 }
